@@ -46,6 +46,18 @@ a {
 	font-weight: var(--font-weight-bold);
 }
 
+a:link {
+	font-style: italic;
+}
+
+a:visited {
+	text-decoration: underline;
+}
+
+a:hover {
+	color: var(--color-light-grey);
+}
+
 h1,
 h2,
 h3,
