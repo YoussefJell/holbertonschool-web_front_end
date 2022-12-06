@@ -14,9 +14,21 @@ body {
 	line-height: var(--line-height-base);
 }
 
-a {
-	color: #161616;
+a:link {
+	color: var(--text-color);
 	text-decoration: none;
+}
+
+a:visited {
+	font-style: italic;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -44,18 +56,6 @@ a {
 	font-family: var(--font-family-title);
 	text-transform: var(--section-tagline-transform);
 	font-weight: var(--font-weight-bold);
-}
-
-a:link {
-	font-style: italic;
-}
-
-a:visited {
-	text-decoration: underline;
-}
-
-a:hover {
-	color: var(--color-light-grey);
 }
 
 h1,
