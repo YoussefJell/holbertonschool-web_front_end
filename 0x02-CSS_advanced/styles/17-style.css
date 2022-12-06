@@ -54,15 +54,15 @@ a {
 
 .section-header {
   text-align: var(--section-header-align);
-  pad: var(--section-header-padding);
+  padding: var(--section-header-padding);
 }
 
 .section-body {
-  pad: var(--section-body-padding);
+  padding: var(--section-body-padding);
 }
 
 .section-footer {
-  pad: var(--section-footer-padding);
+  padding: var(--section-footer-padding);
 }
 
 .container {
@@ -308,5 +308,5 @@ template {
 
 /*# sourceMappingURL=normalize.min.css.map */
 .footer {
-  pad: var(--footer-padding);
+  padding: var(--footer-padding);
 }
