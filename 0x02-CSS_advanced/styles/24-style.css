@@ -44,7 +44,6 @@ a {
 }
 
 .card-services a:hover {
-	display: block;
 	color: var(--color-white);
 	text-decoration: none;
 	background-color: var(--color-primary);
