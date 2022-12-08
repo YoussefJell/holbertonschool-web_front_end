@@ -1,0 +1,16 @@
+/* 7-nested_deeper */
+$f-size-med: 14px;
+$f-size-big: 16px;
+$f-size-sml: 12px;
+
+body {
+	font-size: $f-size-med;
+
+	h1 {
+		font-size: $f-size-big;
+
+		.smaller {
+			font-size: $f-size-sml;
+		}
+	}
+}
