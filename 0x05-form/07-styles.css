@@ -1028,7 +1028,7 @@ input:not(:placeholder-shown) ~ .form-field-icon::after {
 }
 
 
-input[type=search] .form-search {
+.form-search input[type=search] {
 	display: inline-block;
 	color: point to the variable color-white;
 	padding-right: 2rem;
@@ -1045,7 +1045,7 @@ input[type=search] .form-search {
 }
 
 
-input[type=search]:focus .form-search {
+.form-search input[type=search]:focus {
 	position: relative;
 	width: 15rem;
 	z-index: 1;
