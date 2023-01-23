@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+        <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <script type="application/javascript">
+            function createFamilyTree() {
+                $("body").append("<table>");
+                $("table").append("<thead>");
+                $("thead").append("<tr>");
+                $("tr").eq(0).append("<th>", "<th>");
+                $("th").eq(0).text("Firstname");
+                $("th").eq(1).text("Lastname");
+                $("table").append("<tbody>");
+            }
+            function addNewMember(firstName, lastName) {
+                let tableRow = $("<tr></tr>");
+                let close = $("<td>(x)</td>");
+      
+                close.css("background-color", "orange");
+                close.click(function() {
+                  $(tableRow).remove()
+                });
+      
+                tableRow.append("<td>" + firstName + "</td>");
+                tableRow.append("<td>" + lastName + "</td>");
+                tableRow.append(close);
+                $("tbody").append(tableRow);
+              }
+              function createForm() {
+                $("table").before(
+                  "<input type='text' id='firstName'>\
+                        <input type='text' id='lastName'>\
+                        <select name='select' id='option'>\
+                            <option value='before'>Before</option>\
+                            <option value='after'>After</option>\
+                        </select>\
+                        <button id='btn'>Submit</button>"
+                );
+                $("#btn").click(function () {
+                  var fName = $("#firstName").val();
+                  var lName = $("#lastName").val();
+                  var option = $("#option").val();
+        
+                  addNewMember(fName, lName, option);
+                });
+              }
+            createFamilyTree();
+            createForm();
+        </script>
+    </body>
+
+</html>
